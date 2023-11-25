@@ -8,7 +8,7 @@ const cors = require("cors");
 const bodyParser = require("body-parser");
 const cookieParser = require("cookie-parser");
 const corsOptions = {
-  origin: ["http://localhost:5534", "*"],
+  origin: ["http://localhost:5501", "*"],
   // methods: ["*"],
   credentials: true, //access-control-allow-credentials:true
   optionSuccessStatus: 200,

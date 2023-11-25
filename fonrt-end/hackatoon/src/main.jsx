@@ -6,10 +6,10 @@ import { AutProvider } from "./context/useContex";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <AutProvider>
-      <BrowserRouter>
+    <BrowserRouter>
+      <AutProvider>
         <App />
-      </BrowserRouter>
-    </AutProvider>
+      </AutProvider>
+    </BrowserRouter>
   </React.StrictMode>
 );

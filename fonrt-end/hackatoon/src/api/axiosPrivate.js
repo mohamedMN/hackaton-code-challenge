@@ -1,12 +1,17 @@
 import axios from "axios";
+
 const BaseURL = "http://localhost:3121";
 
-export default axios.create({
+// Default Axios instance
+const axiosInstance = axios.create({
   baseURL: BaseURL,
 });
-// my own axios request
-export const axiosPrivate = axios.create({
+
+// Axios instance with custom configurations (e.g., headers, withCredentials)
+const axiosPrivate = axios.create({
   baseURL: BaseURL,
   headers: { "Content-Type": "application/json" },
   withCredentials: true,
 });
+
+export { axiosInstance, axiosPrivate };
